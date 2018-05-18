@@ -11,6 +11,8 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
 
+    <version.yasson>1.0.1</version.yasson>
+
     <version.assertj>3.10.0</version.assertj>
     <version.junit>5.2.0</version.junit>
     <version.mockito>2.18.3</version.mockito>
@@ -18,6 +20,12 @@
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>org.eclipse</groupId>
+        <artifactId>yasson</artifactId>
+        <version>${version.yasson}</version>
+      </dependency>
+
       <dependency>
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
@@ -40,6 +48,11 @@
 
   <dependencies>
       <dependency>
+        <groupId>org.eclipse</groupId>
+        <artifactId>yasson</artifactId>
+      </dependency>
+
+      <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
         <scope>test</scope>
@@ -52,6 +65,11 @@
       <dependency>
         <groupId>org.assertj</groupId>
         <artifactId>assertj-core</artifactId>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
         <scope>test</scope>
       </dependency>
   </dependencies>
