@@ -13,6 +13,8 @@
 
     <version.yasson>1.0.1</version.yasson>
 
+    <version.lombok>1.16.20</version.lombok>
+
     <version.assertj>3.10.0</version.assertj>
     <version.junit>5.2.0</version.junit>
     <version.mockito>2.18.3</version.mockito>
@@ -20,10 +22,31 @@
 
   <dependencyManagement>
     <dependencies>
+      <!-- <dependency>
+        <groupId>javax.json.bind</groupId>
+        <artifactId>javax.json.bind-api</artifactId>
+        <version>1.0</version>
+      </dependency>   
+      <dependency>
+        <groupId>javax.json.bind</groupId>
+        <artifactId>javax.json-api</artifactId>
+        <version>1.1.2</version>
+      </dependency>    -->
       <dependency>
         <groupId>org.eclipse</groupId>
         <artifactId>yasson</artifactId>
         <version>${version.yasson}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish</groupId>
+        <artifactId>javax.json</artifactId>
+        <version>1.0.4</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${version.lombok}</version>
       </dependency>
 
       <dependency>
@@ -50,6 +73,15 @@
       <dependency>
         <groupId>org.eclipse</groupId>
         <artifactId>yasson</artifactId>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish</groupId>
+        <artifactId>javax.json</artifactId>
+      </dependency>
+
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
       </dependency>
 
       <dependency>
